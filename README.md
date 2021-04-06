@@ -1,6 +1,7 @@
 # Kotlin Console Example
 
-A simple console program example using Maven.
+A simple console program example using [Apache
+Maven](https://maven.apache.org/).
 
 ## Sort POM
 
@@ -45,18 +46,33 @@ Or the short version: which depends on [.m2/settings.xml](.m2/settings.xml)
 mvn ktlint:check
 ```
 
+## Build
+
+I use the following command is used to build the project:
+
+```bash
+mvn sortpom:sort ktlint:format install
+```
+
 ## Run
 
 Run the application with:
 
 ```bash
-$ mvn exec:java -Dexec.args="one two three"
-...
-Got arguments:
+mvn exec:java -Dexec.args="one two three"
+```
 
-one
-two
-three
+Or alternatively:
+
+```bash
+kotlin -cp target/example-1.0.jar example.console.ExampleArgsKt one two three
+```
+
+Or even this:
+
+```bash
+KOTLIN_LIB=/snap/kotlin/current/lib
+java -cp ${KOTLIN_LIB}/kotlin-stdlib.jar:target/example-1.0.jar example.console.ExampleArgsKt one two three
 ```
 
 ## Reports
@@ -64,7 +80,7 @@ three
 To generate reports run:
 
 ```bash
-mvn clean site
+mvn site
 ```
 
 ## Documentation

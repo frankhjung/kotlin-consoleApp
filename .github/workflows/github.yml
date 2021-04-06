@@ -9,9 +9,9 @@ name: build java project using maven
 
 on:
   push:
-    branches: [master,develop]
+    branches: [main]
   pull_request:
-    branches: [master,develop]
+    branches: [main]
 
 jobs:
 

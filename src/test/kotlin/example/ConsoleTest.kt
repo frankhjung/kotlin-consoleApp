@@ -1,6 +1,6 @@
-package frankhjung.tests
+package example
 
-import frankhjung.console.processArgs
+import example.console.processArgs
 import org.junit.Test
 import kotlin.test.assertEquals
 

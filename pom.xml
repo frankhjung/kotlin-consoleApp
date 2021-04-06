@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>frankhjung</groupId>
-    <artifactId>consoleApp</artifactId>
+    <groupId>consoleApp</groupId>
+    <artifactId>example</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
     <name>consoleApp</name>
@@ -142,7 +142,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.6.0</version>
                 <configuration>
-                    <mainClass>com.marlo.console.MainKt</mainClass>
+                    <mainClass>example.console.ExampleArgsKt</mainClass>
                 </configuration>
             </plugin>
             <plugin>
@@ -159,6 +159,9 @@
                 </executions>
                 <configuration>
                     <outputDir>${project.build.directory}/site/dokka</outputDir>
+                    <includes>
+                        <include>src/main/kotlin/packages.md</include>
+                    </includes>
                     <dokkaPlugins>
                         <plugin>
                             <groupId>org.jetbrains.dokka</groupId>

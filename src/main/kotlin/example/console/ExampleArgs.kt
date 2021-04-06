@@ -1,4 +1,4 @@
-package frankhjung.console
+package example.console
 
 import kotlin.system.exitProcess
 
