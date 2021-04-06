@@ -1,0 +1,9 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:example.console////PointingToDeclaration/example/example.console/index.html
+$dokka.location:example.console/ExampleArgsKt///PointingToDeclaration/example/example.console/-example-args-kt/index.html
+$dokka.location:example.console/ExampleArgsKt/main/#kotlin.Array[kotlin.String]/PointingToDeclaration/example/example.console/-example-args-kt/main.html
+$dokka.location:example.console/ExampleArgsKt/processArgs/#kotlin.collections.List[kotlin.String]/PointingToDeclaration/example/example.console/-example-args-kt/process-args.html
+$dokka.location:example.console/ExampleArgsKt/showArgs/#kotlin.Array[kotlin.String]/PointingToDeclaration/example/example.console/-example-args-kt/show-args.html
+example.console
+
